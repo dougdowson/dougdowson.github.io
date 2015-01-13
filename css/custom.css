@@ -1,0 +1,206 @@
+
+h1.main-title, h2.sub-head {
+  font-family: 'Lato',sans-serif;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5rem;
+  word-spacing: 4px;
+}
+
+h2.sub-head {
+  font-weight: 700;
+  margin-top: 15px;
+  font-size: 3rem;
+}
+
+.about {
+  padding: 0 0 1rem;
+  background: #fff;
+  border-top: #d5171c 8px solid;
+}
+
+.about blockquote {
+  margin: 0 0 3em 0;
+  padding: 0;
+}
+
+.about blockquote span:not(.highlight) {
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  text-align: left;
+  font-size: 2.5em;
+  line-height: 1.9em;
+  font-weight: 300;
+  position: relative;
+  color: #444444;
+  font-family: 'Merriweather',serif;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 5px;
+}
+
+.about blockquote span.highlight {
+  color: #d5171c
+}
+
+.about blockquote span.e-mail {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-size: 1em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; 
+  color: #d5171c;
+}
+
+.about p {
+  font-family: 'Lato',sans-serif;
+  font-size: 1.5em;
+  margin: 0 0 1em 0;
+  font-weight: 300;
+  line-height: 1.5em;
+  text-align: left;
+  color: #444444;
+}
+
+.portfolio {
+  margin: 0;
+  padding: 0 0 5rem 0;
+  text-align: left;
+  background: #fff;
+}
+
+.portfolio .column {
+  margin: 0;
+  padding: 1.5rem 3rem 1.5rem 0;
+  background: #fff;
+  -webkit-border-radius: 0px; 
+  -moz-border-radius: 0px; 
+}
+
+.portfolio img {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #dedede;
+}
+
+.portfolio h4 {
+  margin: 0.5em 0 0 0;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.7em;
+  position: relative;
+  color: #444444;
+  font-family: 'Merriweather',serif;
+}
+
+.portfolio h4.recent {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.portfolio .source {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 300;
+  color: #bbb;
+  font-style: italic;
+}
+
+.portfolio p {
+  font-family: 'Lato',sans-serif;
+  font-size: 1.1em;
+  margin: 0 0 0.7em 0;
+  font-weight: 300;
+  line-height: 1.5em;
+  text-align: left;
+  color: #444444;
+}
+
+.portfolio .row a, .portfolio .row a:hover h4.source {
+  text-decoration: none;
+}
+
+.portfolio .row a:hover h4 {
+  text-decoration: underline;
+}
+.hero .container {
+  padding: 22rem 0 7rem;
+}
+
+.hero {
+  padding: 8rem 0 7rem;
+  height: 609px;
+  background-image: url('../images/map-bw.png');
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.categories { 
+  margin-bottom: 4rem;
+}
+
+.sec-icon {
+    display:block;
+    margin: -40px auto 50px auto;
+}
+
+.footer {
+  margin: 0;
+  padding: 1.5rem 0 1.5rem 0;
+  background: #111111;
+}
+
+.footer p {
+  margin: 0 0 0.7em 0;
+  padding: 0;
+  font-family: 'Lato',sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: left;
+  color: #6c6c6c;
+}
+
+.social-icons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-icons li {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.social-icons .fa {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.3em;
+  line-height: 1.7em;
+}
+
+.social-icons.icon-circle .fa{ 
+  border-radius: 50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+}
+
+.social-icons .fa-facebook, .social-icons .fa-github, .social-icons .fa-google-plus, .social-icons .fa-linkedin, .social-icons .fa-twitter {background-color:#6c6c6c;}
+.social-icons .fa-facebook, .social-icons .fa-github, .social-icons .fa-google-plus, .social-icons .fa-linkedin, .social-icons .fa-twitter {color:#111111;}
+.social-icons .fa-facebook:hover, .social-icons .fa-github:hover, .social-icons .fa-google-plus:hover, .social-icons .fa-linkedin:hover, .social-icons .fa-twitter:hover {color:#fff;}
+
+.social-icons .fa-facebook:hover{background-color:#3C599F;}  
+.social-icons .fa-github:hover{background-color:#070709;} 
+.social-icons .fa-google-plus:hover{background-color:#CF3D2E;} 
+.social-icons .fa-linkedin:hover{background-color:#0085AE;} 
+.social-icons .fa-twitter:hover{background-color:#32CCFE;} 
