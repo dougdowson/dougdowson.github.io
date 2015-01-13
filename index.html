@@ -8,7 +8,6 @@
   <title>Doug Dowson | Data + Web Development + Design</title>
   <meta name="description" content="">
   <meta name="author" content="">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -17,9 +16,9 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href='//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Raleway:300,400,600' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather:300,400,700,900' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -53,8 +52,8 @@
     <div class="container">
       <div class="row">
         <div class="twelve columns">
-          <h3>Hi! I&#146;m <span class="highlight">Doug Dowson</span>. I&#146;m an <span class="highlight">economic</span> researcher and freelance <span class="highlight">data journalist</span> in <span class="highlight">Washington, DC</span>. I use <span class="highlight">simple</span> language, <span class="highlight">clean</span> code, and <span class="highlight">beautiful</span> design to tell stories with <span class="highlight">data</span>. Thanks for stopping by.</h3>
-          <h3>Email me at <span class="e-mail">moc.liamg@noswod.guod</span>.</h3>
+          <h4>Hi! I&#146;m <span class="highlight">Doug Dowson</span>. I&#146;m an <span class="highlight">economic</span> researcher and freelance <span class="highlight">data journalist</span> in <span class="highlight">Washington, DC</span>. I use <span class="highlight">simple</span> language, <span class="highlight">clean</span> code, and <span class="highlight">beautiful</span> design to tell stories with <span class="highlight">data</span>. Thanks for stopping by.</h4>
+          <h4>Email me at <span class="e-mail">moc.liamg@noswod.guod</span>.</h4>
         </div>
       </div>
     </div>
@@ -168,8 +167,15 @@
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+<script>
+$(window).resize(function() {
+    $('.hero').height($(window).height()-37);
+}).resize();
+</script>
+
+<script>
 $(document).ready(function() {
 	$("#banks").hover(
         function()
@@ -241,7 +247,6 @@ $(document).ready(function() {
     );
 
 });
-
 </script>
 
 </body>
