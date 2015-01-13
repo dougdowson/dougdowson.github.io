@@ -7,14 +7,11 @@ h1.main-title, h2.sub-head {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  font-size: 5rem;
-  word-spacing: 4px;
 }
 
 h2.sub-head {
   font-weight: 700;
   margin-top: 15px;
-  font-size: 3rem;
 }
 
 .about {
@@ -28,28 +25,25 @@ h2.sub-head {
   padding: 0;
 }
 
-.about blockquote span:not(.highlight) {
+.about h3 {
   margin: 0 0 0.5em 0;
   padding: 0;
   text-align: left;
-  font-size: 2.5em;
   line-height: 1.9em;
   font-weight: 300;
   position: relative;
   color: #444444;
   font-family: 'Merriweather',serif;
-  border-bottom: 1px solid #dedede;
   padding-bottom: 5px;
 }
 
-.about blockquote span.highlight {
+.about span.highlight {
   color: #d5171c
 }
 
-.about blockquote span.e-mail {
+.about span.e-mail {
   unicode-bidi: bidi-override;
   direction: rtl;
-  font-size: 1em;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
