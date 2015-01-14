@@ -72,8 +72,7 @@
 
         <a href="http://bl.ocks.org/dougdowson/raw/4e58bb4d1486fc616484/">
           <div class="one-third column" id="banks">
-		    <img  class="u-max-full-width base" src="images/bank-failures-thumb.png">
-		    <img  class="u-max-full-width hover" src="images/bank-failures-thumb.gif">
+		    <img  class="u-max-full-width" src="images/bank-failures-thumb.png">
 		    <h4>American bank failures: 2007-2014</h4>
 		    <h4 class="source">Personal</h4>
           </div>
@@ -90,8 +89,7 @@
 
         <a href="http://bl.ocks.org/dougdowson/raw/8a43c7a7e5407e47afed/">
           <div class="one-third column" id="inequality">
-		    <img  class="u-max-full-width base" src="images/inequality-thumb.png">
-		    <img  class="u-max-full-width hover" src="images/inequality-thumb.gif">
+		    <img  class="u-max-full-width" src="images/inequality-thumb.png">
 		    <h4>America&#146;s unequal income growth</h4>
 		    <h4 class="source">Personal</h4>
 		    <p>Occupations at the high end of the income scale have experienced rapid wage growth while low-income occupations have seen wages stagnate.</p>
@@ -104,8 +102,7 @@
 
         <a href="http://bl.ocks.org/dougdowson/raw/98ea0996d7fb09a72bf9/">
           <div class="one-third column" id="emissions">
-		    <img  class="u-max-full-width base" src="images/emissions-thumb.png">
-		    <img  class="u-max-full-width hover" src="images/emissions-thumb.gif">
+		    <img  class="u-max-full-width" src="images/emissions-thumb.png">
 		    <h4>CO<sub>2</sub> emissions and GDP per capita</h4>
 		    <h4 class="source">Personal</h4>
           </div>
@@ -113,8 +110,7 @@
 
         <a href="http://www.economist.com/node/21620337">
           <div class="one-third column" id="lfpr">
-		    <img  class="u-max-full-width base" src="images/unemp-lfpr-thumb.png">
-		    <img  class="u-max-full-width hover" src="images/unemp-lfpr-thumb.gif">
+		    <img  class="u-max-full-width" src="images/unemp-lfpr-thumb.png">
 		    <h4>For whom the jobs toll</h4>
 		    <h4 class="source">The Economist</h4>
 		    <p>America has experienced a puzzling decline in the share of people either working or looking for work.</p>
@@ -123,8 +119,7 @@
 
         <a href="http://www.economist.com/node/21610975">
           <div class="one-third column" id="prime-age">
-		    <img  class="u-max-full-width base" src="images/prime-age-thumb.png">
-		    <img  class="u-max-full-width hover" src="images/prime-age-thumb.gif">
+		    <img  class="u-max-full-width" src="images/prime-age-thumb.png">
 		    <h4>America&#146;s new workforce</h4>
 		    <h4 class="source">The Economist</h4>
 		    <p>Have America&#146;s prime-age workers been left out of the economic recovery?</p>
@@ -137,8 +132,7 @@
 
         <a href="http://www.economist.com/blogs/graphicdetail/2014/07/action-chart">
           <div class="one-third column" id="brazilian-real">
-		    <img  class="u-max-full-width base" src="images/brazilian-real-thumb.png">
-		    <img  class="u-max-full-width hover" src="images/brazilian-real-thumb.gif">
+		    <img  class="u-max-full-width" src="images/brazilian-real-thumb.png">
 		    <h4>Real bumpy</h4>
 		    <h4 class="source">The Economist</h4>
 		    <p>The Brazilian real&#146;s bumpy ride</p>
@@ -179,6 +173,88 @@
 $(window).resize(function() {
     $('.hero').height($(window).height()-37);
 }).resize();
+</script>
+
+<script>
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+
+preload([
+    'images/bank-failures-thumb.gif',
+    'images/unemp-lfpr-thumb.gif',
+    'images/inequality-thumb.gif',
+    'images/emissions-thumb.gif',
+    'images/prime-age-thumb.gif',
+    'images/brazilian-real-thumb.gif'
+]);
+</script>
+
+<script>
+$(document).ready(function() {
+	$("#banks").hover(
+        function()
+        {
+            $("img", this).attr("src", "images/bank-failures-thumb.gif");
+        },
+        function()
+        {
+            $("img", this).attr("src", "images/bank-failures-thumb.png");
+        }
+    );
+    $("#lfpr").hover(
+        function()
+        {
+            $("img", this).attr("src", "images/unemp-lfpr-thumb.gif");
+        },
+        function()
+        {
+            $("img", this).attr("src", "images/unemp-lfpr-thumb.png");
+        }
+    );
+    $("#inequality").hover(
+        function()
+        {
+            $("img", this).attr("src", "images/inequality-thumb.gif");
+        },
+        function()
+        {
+            $("img", this).attr("src", "images/inequality-thumb.png");
+        }
+    );
+    $("#emissions").hover(
+        function()
+        {
+            $("img", this).attr("src", "images/emissions-thumb.gif");
+        },
+        function()
+        {
+            $("img", this).attr("src", "images/emissions-thumb.png");
+        }
+    );
+    $("#prime-age").hover(
+        function()
+        {
+            $("img", this).attr("src", "images/prime-age-thumb.gif");
+        },
+        function()
+        {
+            $("img", this).attr("src", "images/prime-age-thumb.png");
+        }
+    );
+    $("#brazilian-real").hover(
+        function()
+        {
+            $("img", this).attr("src", "images/brazilian-real-thumb.gif");
+        },
+        function()
+        {
+            $("img", this).attr("src", "images/brazilian-real-thumb.png");
+        }
+    );
+});
 </script>
 
 </body>
