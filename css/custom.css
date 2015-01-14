@@ -67,6 +67,14 @@ h2.sub-head {
   -moz-border-radius: 0px; 
 }
 
+.portfolio .column .base, .portfolio .column:hover .hover {
+  display: block;
+}
+
+.portfolio .column .hover, .portfolio .column:hover .base {
+  display: none;
+}
+
 .portfolio img {
   margin: 0;
   padding: 0;
