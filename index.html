@@ -173,9 +173,9 @@
 $(window).resize(function() {
     $('.hero').height($(window).height()-37);
 }).resize();
-</script>
 
-<script>
+$(".hero .container").css({"position":"relative","top":"45%","transform":"translateY(-50%)"});
+
 function preload(arrayOfImages) {
     $(arrayOfImages).each(function(){
         $('<img/>')[0].src = this;
@@ -190,9 +190,7 @@ preload([
     'images/prime-age-thumb.gif',
     'images/brazilian-real-thumb.gif'
 ]);
-</script>
 
-<script>
 $(document).ready(function() {
 	$("#banks").hover(
         function()
