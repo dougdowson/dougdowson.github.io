@@ -15,7 +15,7 @@ h2.sub-head {
 }
 
 .about {
-  padding: 0 0 1rem;
+  padding: 0 0 1em 0;
   background: #fff;
   border-top: #d5171c 8px solid;
 }
@@ -115,17 +115,19 @@ h2.sub-head {
   text-decoration: underline;
 }
 
-.hero .container {
-  position: relative;
-  top: 45%;
-  transform: translateY(-50%);
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
 }
 
+
+
 .hero {
-  background-image: url('../images/map-bw.png');
-  background-position: center;
-  background-size: cover;
-  color: #fff;
+  margin: 0;
+  padding: 1.5rem 0 1.5rem 0;
+  background: #111111;
+
 }
 
 .categories { 
